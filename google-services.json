@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "711234142384",
+    "firebase_url": "https://singinnative.firebaseio.com",
+    "project_id": "singinnative",
+    "storage_bucket": "singinnative.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:711234142384:android:7b04af31ca22f3d5437b75",
+        "android_client_info": {
+          "package_name": "host.exp.exponent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "711234142384-g92l8eq6dm6kb2l0knir8b0tjvkkhi6f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "host.exp.exponent",
+            "certificate_hash": "31216e9e0dc7778650ee990d0c0a4f518a8de9fd"
+          }
+        },
+        {
+          "client_id": "711234142384-gbkdfqe2cn91gn2mgfjtm8voj55chu7k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfaQvj9gPLcMdm-6FiC8PiOzD3FFGLn4o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "711234142384-gbkdfqe2cn91gn2mgfjtm8voj55chu7k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
