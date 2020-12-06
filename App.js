@@ -82,6 +82,20 @@ export default function App() {
 
   const authContext = useMemo(
     () => ({
+      signInTrivial: () => {
+        dispatch({
+          type: "SIGN_IN",
+          name: "Divanshu Agarwal",
+          avatarUrl: "https://randomuser.me/api/portraits/men/59.jpg",
+          token:
+            "451977272236-i8b8rf0mv3c4k1m2qkst71fra813jut5.apps.googleusercontent.com",
+        });
+      },
+      signOutTrivial: () => {
+        dispatch({
+          type: "SIGN_OUT",
+        });
+      },
       signIn: async () => {
         try {
           const { type, accessToken, user } = await Google.logInAsync({

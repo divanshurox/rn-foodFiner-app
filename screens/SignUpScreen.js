@@ -20,7 +20,7 @@ import * as Animatable from "react-native-animatable";
 
 const SignUpScreen = () => {
   const [isPasswordHidden, setPasswordHidden] = useState(true);
-  const { signIn } = useContext(AuthContext);
+  const { signIn, signInTrivial } = useContext(AuthContext);
 
   const [useData, setUserData] = useState({
     email: "",
@@ -88,11 +88,16 @@ const SignUpScreen = () => {
             />
           </TouchableWithoutFeedback>
         </View>
-        <View style={styles.button}>
-          <LinearGradient colors={["#f2c746", "orange"]} style={styles.signIn}>
-            <Text style={styles.textSign}>Get Started</Text>
-          </LinearGradient>
-        </View>
+        <TouchableOpacity onPress={signInTrivial}>
+          <View style={styles.button}>
+            <LinearGradient
+              colors={["#f2c746", "orange"]}
+              style={styles.signIn}
+            >
+              <Text style={styles.textSign}>Get Started</Text>
+            </LinearGradient>
+          </View>
+        </TouchableOpacity>
         <TouchableOpacity onPress={signIn}>
           <View style={styles.button}>
             <LinearGradient
